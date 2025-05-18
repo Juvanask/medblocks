@@ -1,6 +1,6 @@
-# Medblocks – Patient Management System
+# frontend-only patient registration app
 
-Medblocks is a simple patient management system built with **React** and **Tailwind CSS**. It helps manage patient records including registration, listing, querying, and bulk uploads through Excel files.
+Medblocks is a simple frontend-only patient registration app system built with React and Tailwind CSS. It helps manage patient records including registration, listing, querying, and bulk uploads through Excel files.
 
 ---
 

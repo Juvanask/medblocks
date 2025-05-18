@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Medblocks – Patient Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Medblocks is a simple patient management system built with **React** and **Tailwind CSS**. It helps manage patient records including registration, listing, querying, and bulk uploads through Excel files.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Register new patients with name, age, gender, and address  
+- View and manage a list of all registered patients  
+- Run SQL queries to filter and analyze patient data  
+- Upload patient data in bulk using Excel files  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Basic Project Structure
 
-### `npm test`
+/src
+/components
+/PatientForm - Form to add a new patient
+/PatientList - List view of all patients
+/QueryForm - SQL query form
+/ExcelUpload - Upload patients using Excel
+/Header - App header
+/Footer - App footer
+/Section - Layout wrapper
+/Navigation - Navigation bar
+/services
+dbService.js - Handles database operations
+/styles
+index.css
+tailwind.css
+App.js
+index.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js  
+- npm
+- Git
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/Juvanask/medblocks.git
+cd patient_registration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 2. Install Dependencies
+- npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Run the Application 
+- npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Then open your browser and visit:
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Usage Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Register New Patients
 
-### Making a Progressive Web App
+- Navigate to the Register New Patient page  
+- Fill out the form with patient details  
+- Click on Register Patient to add them to the system  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### View Patient List
 
-### Advanced Configuration
+- Go to the Patient List section  
+- Use the search bar to find patients by name  
+- Sort patients by name or age using the dropdown  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Query Patients
 
-### Deployment
+- Navigate to the Search / Query Patients page  
+- Enter your SQL query in the textarea  
+- Click Execute Query to see the filtered results  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Upload Patient Data via Excel
 
-### `npm run build` fails to minify
+- Go to the Register New Patient section  
+- Scroll down to Bulk Upload via Excel  
+- Upload an Excel file containing patient details  
+- Click Upload Patients to import the data  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Excel Upload Format
+
+The Excel file should have the following columns:
+
+| name         | age | gender | address           |
+|--------------|-----|--------|-------------------|
+| John Doe     | 35  | Male   | 123 Main Street   |
+| Jane Smith   | 28  | Female | 456 Elm Avenue    |
+
+i will attach an sample excel sheet in the mail as wel as in this project as sample-patients.xlsx in the "sample" folder
+
+---
+
+## Author
+
+Created for Medblocks
